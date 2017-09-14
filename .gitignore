@@ -30,4 +30,3 @@ node_modules
 
 # Build artifacts
 /examples/static
-/lib

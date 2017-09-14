@@ -472,7 +472,7 @@ class Modal extends React.Component {
     let autoFocus = this.props.autoFocus;
     let modalContent = this.getDialogElement();
     let current = activeElement(ownerDocument(this));
-    let focusInModal = current && contains(modalContent, current);
+    let focusInModal = modalContent && current && contains(modalContent, current);
 
     if (modalContent && autoFocus && !focusInModal) {
       this.lastFocus = current;
